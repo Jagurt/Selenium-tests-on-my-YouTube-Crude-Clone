@@ -21,10 +21,10 @@ namespace TestyYTReactAPI
         [FindsBy(How = How.Name, Using = "player")]
         public IWebElement videoPlayer { get; set; }
 
-        public void SearchResult( string initial )
+        public void SearchResult( string key )
         {
             txtSearchBar.Clear();
-            txtSearchBar.SendKeys(initial);
+            txtSearchBar.SendKeys(key);
             txtSearchBar.Submit();
         }
 
